@@ -23,7 +23,7 @@ class PrisionersGame:
     def play_naive_mem(self, play_number):
         not_attemped = self.drawer_ids[:]
         for attempt in range(self.max_attempts):
-            guess = random.choice(not_attemped)
+                        guess = random.choice(not_attemped)
             not_attemped.remove(guess)
 
             if self.drawers[guess] == player_number:
