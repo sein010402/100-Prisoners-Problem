@@ -25,8 +25,11 @@ class PrisionersGame:
     def play_optimum(self):
         return
     @classmethod
-    def victory(csl):
-        return
+    def victory(csl, results):
+        """Defines a victory of a game: all players won"""
+        return all(results)
+
+    approaches = [play_naive, play_naive_mem, play_optimum]
     def play(self):
         return
 
